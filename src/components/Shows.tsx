@@ -3,21 +3,21 @@ import { Calendar, MapPin, Clock } from 'lucide-react';
 
 const shows = [
   {
-    date: 'March 15, 2024',
+    date: 'Decemeber 15, 2024',
     venue: "Rusty's Saloon",
-    location: 'Nashville, TN',
+    location: 'Salt Lake City, UT',
     time: '9:00 PM'
   },
   {
-    date: 'March 22, 2024',
+    date: 'January 22, 2025',
     venue: 'The Whiskey Bar',
-    location: 'Austin, TX',
+    location: 'Draper, UT',
     time: '10:00 PM'
   },
   {
-    date: 'April 5, 2024',
+    date: 'February 5, 2025',
     venue: 'Country Roads Festival',
-    location: 'Memphis, TN',
+    location: 'West Valley, UT',
     time: '8:30 PM'
   }
 ];
