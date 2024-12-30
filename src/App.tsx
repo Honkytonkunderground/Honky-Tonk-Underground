@@ -1,4 +1,4 @@
-import React from 'react';
+import { Venue } from './components/Venue';
 import { Hero } from './components/Hero';
 import { Shows } from './components/Shows';
 import { BandMembers } from './components/BandMembers';
@@ -12,6 +12,7 @@ function App() {
       <Hero />
       <Shows />
       <BandMembers />
+      <Venue />
       <About />
       <Booking />
       <Footer />

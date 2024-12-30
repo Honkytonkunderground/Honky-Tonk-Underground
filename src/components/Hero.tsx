@@ -1,5 +1,3 @@
-import React from 'react';
-
 export function Hero() {
   return (
     <header className="relative h-screen flex items-center justify-center">

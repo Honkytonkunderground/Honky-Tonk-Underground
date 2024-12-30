@@ -1,5 +1,4 @@
-import React from 'react';
-import { Calendar, MapPin, Clock } from 'lucide-react';
+import { Music4, Calendar, Mail, MapPin, Clock } from 'lucide-react';
 
 const shows = [
   {
