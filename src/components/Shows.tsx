@@ -1,8 +1,27 @@
-import { Music4, Calendar, Mail, MapPin, Clock } from 'lucide-react';
+import { Calendar, MapPin, Clock } from 'lucide-react';
 
-const shows = [
+interface Show {
+  date: string;
+  venue: string;
+  location: string;
+  time: string;
+}
+
+const shows: Show[] = [
   {
-    date: 'Decemeber 15, 2024',
+    date: 'December 15, 2024',
+    venue: "Rusty's Saloon",
+    location: 'Salt Lake City, UT',
+    time: '9:00 PM'
+  },
+  {
+    date: 'December 15, 2024',
+    venue: "Rusty's Saloon",
+    location: 'Salt Lake City, UT',
+    time: '9:00 PM'
+  },
+  {
+    date: 'December 15, 2024',
     venue: "Rusty's Saloon",
     location: 'Salt Lake City, UT',
     time: '9:00 PM'
@@ -21,7 +40,12 @@ const shows = [
   }
 ];
 
-export function Shows() {
+export function Shows(): JSX.Element {
+  const isPastShow = (showDate: string): boolean => {
+    const today = new Date();
+    return new Date(showDate) < today;
+  };
+
   return (
     <section className="py-20 px-4 md:px-8 bg-black/30">
       <div className="max-w-6xl mx-auto">
@@ -31,11 +55,23 @@ export function Shows() {
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {shows.map((show, index) => (
-            <div key={index} className="bg-[#2a2422] p-6 rounded-lg hover:bg-[#332e2b] transition-colors">
+            <div 
+              key={index} 
+              className="relative overflow-hidden bg-[#2a2422] p-6 rounded-lg hover:bg-[#332e2b] transition-colors"
+            >
+              {isPastShow(show.date) && (
+                <div className="absolute -right-16 top-8 transform rotate-45 bg-red-500 text-white py-1 w-64 text-center font-bold">
+                  Y'all Missed it!
+                </div>
+              )}
               <div className="flex items-start gap-4">
                 <div className="flex-1">
-                  <p className="text-white font-bold text-xl mb-2">{show.date}</p>
-                  <p className="text-[#f59d0e] text-lg">{show.venue}</p>
+                  <p className={`font-bold text-xl mb-2 ${isPastShow(show.date) ? 'text-gray-500' : 'text-white'}`}>
+                    {show.date}
+                  </p>
+                  <p className={`text-lg ${isPastShow(show.date) ? 'text-gray-500' : 'text-[#f59d0e]'}`}>
+                    {show.venue}
+                  </p>
                   <div className="flex items-center gap-2 text-gray-400 mt-2">
                     <MapPin className="w-4 h-4" />
                     <span>{show.location}</span>
