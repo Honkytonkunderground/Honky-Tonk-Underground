@@ -10,7 +10,7 @@ export function About() {
         </h2>
         <p className="text-lg text-gray-300 leading-relaxed">
           Born in the heart of the underground country scene, Honky Tonk Underground brings raw, 
-          unfiltered country music back to its rebellious roots. With steel guitars, outlaw attitudes, 
+          unfiltered country music back to its rebellious roots. With screaming guitars, outlaw attitudes, 
           and authentic storytelling, we're keeping the spirit of traditional country music alive while 
           blazing our own trail through the modern music landscape.
         </p>
