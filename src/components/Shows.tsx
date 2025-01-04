@@ -9,8 +9,8 @@ interface Show {
 
 const shows: Show[] = [
   {
-    date: 'December 15, 2024',
-    venue: "Rusty's Saloon",
+    date: 'April 25, 2025',
+    venue: "The Westerner",
     location: 'Salt Lake City, UT',
     time: '9:00 PM'
   },
