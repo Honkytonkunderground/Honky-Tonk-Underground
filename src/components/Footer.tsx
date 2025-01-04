@@ -5,13 +5,13 @@ export function Footer() {
     <footer className="py-12 px-4 md:px-8 bg-black/50">
       <div className="max-w-4xl mx-auto text-center">
         <div className="flex justify-center gap-8 mb-8">
-          <a href="https://www.facebook.com/honkytonkunderground" className="text-[#f59d0e] hover:text-white transition-colors">
+          <a href="https://www.facebook.com/honkytonkunderground" target="_blank" rel="noopener noreferrer" className="text-[#f59d0e] hover:text-white transition-colors">
             <Facebook className="w-8 h-8" />
           </a>
-          <a href="#" className="text-[#f59d0e] hover:text-white transition-colors">
+          <a href="#" target="_blank" rel="noopener noreferrer" className="text-[#f59d0e] hover:text-white transition-colors">
             <Instagram className="w-8 h-8" />
           </a>
-          <a href="#" className="text-[#f59d0e] hover:text-white transition-colors">
+          <a href="#" target="_blank" rel="noopener noreferrer" className="text-[#f59d0e] hover:text-white transition-colors">
             <Youtube className="w-8 h-8" />
           </a>
         </div>
