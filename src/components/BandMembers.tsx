@@ -3,28 +3,28 @@ import IMG_1089 from '../IMG_1089.jpg';
 
 const bandMembers = [
   {
-    name: 'Johnny "Wild Card" Wilson',
+    name: 'Artie Hempill',
     role: 'Lead Vocals & Guitar',
-    image: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-    bio: 'The soul of Honky Tonk Underground, bringing raw energy to every performance.'
+    image: '#',
+    bio: '#'
   },
   {
-    name: 'Sarah "Steel String" Johnson',
+    name: 'Jake Workman',
     role: 'Lead Guitar',
-    image: 'https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-    bio: 'Master of the six-string, blending classic country with modern edge.'
+    image: '#',
+    bio: '#'
   },
   {
-    name: 'Mike "Thunder" Thompson',
+    name: 'Meter Manos',
     role: 'Drums',
-    image: 'https://images.unsplash.com/photo-1548922825-474ed08e1645?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-    bio: 'Keeping the heartbeat of outlaw country alive with every beat.'
+    image: '#',
+    bio: '#.'
   },
   {
     name: 'Dave Thurman',
     role: 'Bass Guitar',
     image: IMG_1089,
-    bio: 'The foundation of our sound, holding down the low end with style.'
+    bio: '#'
   }
 ];
 

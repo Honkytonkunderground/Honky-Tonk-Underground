@@ -8,11 +8,11 @@ export function Venue() {
         <div className="flex flex-col items-center space-y-4">
           <div className="flex items-center justify-center space-x-3">
             <Calendar className="text-amber-500" />
-            <span className="text-lg text-gray-300 leading-relaxed">Available for venues, private events, and festivals</span>
+            <span className="text-lg text-gray-300 leading-relaxed">Contact Dave for availability </span>
           </div>
           <div className="flex items-center justify-center space-x-3">
             <MapPin className="text-amber-500" />
-            <span className="text-lg text-gray-300 leading-relaxed">Available throughout Utah and surrounding states</span>
+            <span className="text-lg text-gray-300 leading-relaxed">#</span>
           </div>
           <div className="flex items-center justify-center space-x-3">
             <Clock className="text-amber-500" />
