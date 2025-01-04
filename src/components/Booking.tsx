@@ -33,13 +33,13 @@ export function Booking() {
             </div>
           </button>
           <button 
-            onClick={() => handleCopy("(555) COUNTRY", false)}
+            onClick={() => handleCopy("801-762-7504", false)}
             className="bg-[#2a2422] p-8 rounded-lg hover:bg-[#332e2b] transition-colors text-left"
           >
             <Phone className="w-12 h-12 mx-auto mb-4" />
             <h3 className="text-2xl font-bold mb-2 text-center">Call Our Manager</h3>
             <div className="text-lg text-gray-300 text-center hover:text-[#f59d0e] transition-colors">
-              (555) COUNTRY
+              801-762-7504
               {phoneCopied && <span className="ml-2 text-sm text-green-500">Copied!</span>}
             </div>
           </button>
