@@ -22,13 +22,13 @@ export function Booking() {
         <h2 className="text-4xl font-bold mb-12">Book Us For Your Venue</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <button 
-            onClick={() => handleCopy("booking@honkytonkunderground.com", true)}
+            onClick={() => handleCopy("honkytonkunderground21@gmail.com", true)}
             className="bg-[#2a2422] p-8 rounded-lg hover:bg-[#332e2b] transition-colors text-left"
           >
             <Mail className="w-12 h-12 mx-auto mb-4" />
             <h3 className="text-2xl font-bold mb-2 text-center">Email Us</h3>
             <div className="text-lg text-gray-300 text-center hover:text-[#f59d0e] transition-colors">
-              booking@honkytonkunderground.com
+              honkytonkunderground21@gmail.com
               {emailCopied && <span className="ml-2 text-sm text-green-500">Copied!</span>}
             </div>
           </button>
