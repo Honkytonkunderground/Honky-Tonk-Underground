@@ -19,24 +19,6 @@ const shows: Show[] = [
     venue: "Rusty's Saloon",
     location: 'Salt Lake City, UT',
     time: '9:00 PM'
-  },
-  {
-    date: 'December 15, 2024',
-    venue: "Rusty's Saloon",
-    location: 'Salt Lake City, UT',
-    time: '9:00 PM'
-  },
-  {
-    date: 'January 22, 2025',
-    venue: 'The Whiskey Bar',
-    location: 'Draper, UT',
-    time: '10:00 PM'
-  },
-  {
-    date: 'February 5, 2025',
-    venue: 'Country Roads Festival',
-    location: 'West Valley, UT',
-    time: '8:30 PM'
   }
 ];
 
