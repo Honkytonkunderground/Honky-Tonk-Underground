@@ -1,4 +1,5 @@
 import { Music } from 'lucide-react';
+import IMG_1089 from '../IMG_1089.jpg';
 
 const bandMembers = [
   {
@@ -20,9 +21,9 @@ const bandMembers = [
     bio: 'Keeping the heartbeat of outlaw country alive with every beat.'
   },
   {
-    name: 'Luke "Bass Man" Davis',
+    name: 'Dave Thurman',
     role: 'Bass Guitar',
-    image: 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    image: IMG_1089,
     bio: 'The foundation of our sound, holding down the low end with style.'
   }
 ];
