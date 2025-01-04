@@ -25,6 +25,12 @@ const bandMembers = [
     role: 'Bass Guitar',
     image: IMG_1089,
     bio: '#'
+  },
+  {
+    name: 'Carl Schwitzer',
+    role: 'Second lead, guitar and acoustic',
+    image: '#',
+    bio: '#'
   }
 ];
 
@@ -36,7 +42,7 @@ export function BandMembers() {
           <Music className="w-8 h-8" />
           Meet the Band
         </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
           {bandMembers.map((member, index) => (
             <div 
               key={index}
