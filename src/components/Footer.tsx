@@ -8,7 +8,7 @@ export function Footer() {
           <a href="https://www.facebook.com/honkytonkunderground" target="_blank" rel="noopener noreferrer" className="text-[#f59d0e] hover:text-white transition-colors">
             <Facebook className="w-8 h-8" />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer" className="text-[#f59d0e] hover:text-white transition-colors">
+          <a href="https://www.instagram.com/honkytonkunderground" target="_blank" rel="noopener noreferrer" className="text-[#f59d0e] hover:text-white transition-colors">
             <Instagram className="w-8 h-8" />
           </a>
           <a href="#" target="_blank" rel="noopener noreferrer" className="text-[#f59d0e] hover:text-white transition-colors">

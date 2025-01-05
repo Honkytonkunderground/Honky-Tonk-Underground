@@ -1,5 +1,5 @@
 import { Music } from 'lucide-react';
-import IMG_1089 from '../IMG_1089.jpg';
+import IMG_6261 from '../IMG_6261.jpg';
 
 const bandMembers = [
   {
@@ -23,7 +23,7 @@ const bandMembers = [
   {
     name: 'Dave Thurman',
     role: 'Bass Guitar',
-    image: IMG_1089,
+    image: IMG_6261,
     bio: '#'
   },
   {

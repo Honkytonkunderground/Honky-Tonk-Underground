@@ -12,7 +12,7 @@ function App() {
       <Hero />
       <Shows />
       <BandMembers />
-      <Venue />
+      {/* <Venue /> */}
       <About />
       <Booking />
       <Footer />

@@ -1,4 +1,4 @@
-import honkytonk from '../honkytonklogo.jpg';
+import honkytonk from '../honkytonklogo.png';
 
 export function Hero() {
   return (

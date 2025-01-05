@@ -5,6 +5,7 @@ interface Show {
   venue: string;
   location: string;
   time: string;
+  url: string;
 }
 
 const shows: Show[] = [
@@ -12,13 +13,22 @@ const shows: Show[] = [
     date: 'April 25, 2025',
     venue: "The Westerner",
     location: '3360 S Redwood Rd, West Valley City, UT',
-    time: '9:00 PM'
+    time: '9:00 PM',
+    url: 'https://westernerslc.com'
   },
   {
-    date: 'April 26, 2025',
-    venue: "The Westerner",
-    location: '3360 S Redwood Rd, West Valley City, UT',
-    time: '9:00 PM'
+    date: 'Example Date',
+    venue: "Example Venue",
+    location: 'example location',
+    time: 'example time',
+    url: 'example show'
+  },
+  {
+    date: 'Example Date',
+    venue: "Example Venue",
+    location: 'example location',
+    time: 'example time',
+    url: 'example show'
   }
 ];
 
@@ -38,8 +48,10 @@ export function Shows(): JSX.Element {
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {shows.map((show, index) => (
-            <div 
+            <a 
               key={index} 
+              href={show.url} 
+              target="_blank" 
               className="relative overflow-hidden bg-[#2a2422] p-6 rounded-lg hover:bg-[#332e2b] transition-colors"
             >
               {isPastShow(show.date) && (
@@ -65,7 +77,7 @@ export function Shows(): JSX.Element {
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
