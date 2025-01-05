@@ -11,7 +11,7 @@ function App() {
     <div className="min-h-screen bg-[#1b1917] text-[#f59d0e] font-sans">
       <Hero />
       <Shows />
-      <BandMembers />
+      {/* <BandMembers /> */}
       {/* <Venue /> */}
       <About />
       <Booking />
