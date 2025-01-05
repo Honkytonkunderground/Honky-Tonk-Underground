@@ -2,7 +2,7 @@ import honkytonk from '../honkytonklogo.png';
 
 export function Hero() {
   return (
-    <header className="relative h-3/4 flex items-center justify-center">
+    <header className="relative h-3/4 flex items-center justify-center py-20 px-4 md:px-8">
       <div 
         className="absolute inset-0 bg-gradient-to-b bg-black/30 z-0"
       ></div>
