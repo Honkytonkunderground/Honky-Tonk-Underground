@@ -19,7 +19,7 @@ export function Booking() {
   return (
     <section className="py-20 px-4 md:px-8 bg-black/30">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-12">Book Us For Your Venue</h2>
+        <h2 className="text-4xl font-bold mb-12">To book the best damn dive bar band!</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <button 
             onClick={() => handleCopy("honkytonkunderground21@gmail.com", true)}
@@ -37,7 +37,7 @@ export function Booking() {
             className="bg-[#2a2422] p-8 rounded-lg hover:bg-[#332e2b] transition-colors text-left"
           >
             <Phone className="w-12 h-12 mx-auto mb-4" />
-            <h3 className="text-2xl font-bold mb-2 text-center">Call Our Manager</h3>
+            <h3 className="text-2xl font-bold mb-2 text-center">Call or Text Dave</h3>
             <div className="text-lg text-gray-300 text-center hover:text-[#f59d0e] transition-colors">
               801-762-7504
               {phoneCopied && <span className="ml-2 text-sm text-green-500">Copied!</span>}

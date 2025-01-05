@@ -11,16 +11,17 @@ const shows: Show[] = [
   {
     date: 'April 25, 2025',
     venue: "The Westerner",
-    location: 'Salt Lake City, UT',
+    location: '3360 S Redwood Rd, West Valley City, UT',
     time: '9:00 PM'
   },
   {
-    date: 'December 15, 2024',
-    venue: "Rusty's Saloon",
-    location: 'Salt Lake City, UT',
+    date: 'April 26, 2025',
+    venue: "The Westerner",
+    location: '3360 S Redwood Rd, West Valley City, UT',
     time: '9:00 PM'
   }
 ];
+
 
 export function Shows(): JSX.Element {
   const isPastShow = (showDate: string): boolean => {

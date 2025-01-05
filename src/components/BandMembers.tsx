@@ -28,7 +28,7 @@ const bandMembers = [
   },
   {
     name: 'Carl Schwitzer',
-    role: 'Second lead, guitar and acoustic',
+    role: 'Second lead guitar and acoustic',
     image: '#',
     bio: '#'
   }
