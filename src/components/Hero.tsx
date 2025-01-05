@@ -4,7 +4,7 @@ export function Hero() {
   return (
     <header className="relative h-3/4 flex items-center justify-center">
       <div 
-        className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70 z-0"
+        className="absolute inset-0 bg-gradient-to-b bg-black/30 z-0"
       ></div>
       <div 
         className="relative w-full max-w-screen-lg mx-auto h-[400px] aspect-w-16 aspect-h-9"
