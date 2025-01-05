@@ -17,18 +17,25 @@ const shows: Show[] = [
     url: 'https://westernerslc.com'
   },
   {
-    date: 'Example Date',
-    venue: "Example Venue",
-    location: 'example location',
-    time: 'example time',
-    url: 'example show'
+    date: 'April 26, 2025',
+    venue: "The Westerner",
+    location: '3360 S Redwood Rd, West Valley City, UT',
+    time: '9:00 PM',
+    url: 'https://westernerslc.com'
   },
   {
-    date: 'Example Date',
-    venue: "Example Venue",
-    location: 'example location',
-    time: 'example time',
-    url: 'example show'
+    date: 'September 5, 2025',
+    venue: "The Westerner",
+    location: '3360 S Redwood Rd, West Valley City, UT',
+    time: '9:00 PM',
+    url: 'https://westernerslc.com'
+  },
+  {
+    date: 'September 6, 2025',
+    venue: "The Westerner",
+    location: '3360 S Redwood Rd, West Valley City, UT',
+    time: '9:00 PM',
+    url: 'https://westernerslc.com'
   }
 ];
 
