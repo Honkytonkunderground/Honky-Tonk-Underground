@@ -19,7 +19,7 @@ export function Booking() {
   return (
     <section className="py-20 px-4 md:px-8 bg-black/30">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-12">To book the best damn dive bar band!!</h2>
+        <h2 className="text-4xl font-bold mb-12">To book the best damn dive bar band...</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <button 
             onClick={() => handleCopy("honkytonkunderground21@gmail.com", true)}
