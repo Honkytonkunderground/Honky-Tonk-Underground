@@ -1,6 +1,0 @@
-# robots.txt for Honky Tonk Underground
-User-agent: *
-Disallow: /assets/
-
-# Allow search engines to index the main pages
-Allow: /
