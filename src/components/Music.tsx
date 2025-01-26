@@ -12,10 +12,12 @@ const songs = [
   { id: 'bottle', title: 'Dust On The Bottle', src: '/music/bottle.mp3' },
 ];
 
-export function Music({ title = "Music Selection" }: MusicProps) {
+export default function Music({ title = "Music Selection" }: MusicProps) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
   const [selectedSong, setSelectedSong] = useState(songs[0]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [playRequested, setPlayRequested] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
   useEffect(() => {
@@ -24,6 +26,23 @@ export function Music({ title = "Music Selection" }: MusicProps) {
       
       const audio = audioRef.current;
       
+      const handleLoadStart = () => {
+        setIsLoading(true);
+      };
+
+      const handleCanPlay = () => {
+        setIsLoading(false);
+        if (playRequested) {
+          audio.play().then(() => {
+            setIsPlaying(true);
+            setPlayRequested(false);
+          }).catch(error => {
+            console.error('Playback failed:', error);
+            setPlayRequested(false);
+          });
+        }
+      };
+
       const handlePlay = () => {
         console.log('Audio started playing');
       };
@@ -33,38 +52,51 @@ export function Music({ title = "Music Selection" }: MusicProps) {
       };
 
       // Add event listeners
+      audio.addEventListener('loadstart', handleLoadStart);
+      audio.addEventListener('canplay', handleCanPlay);
       audio.addEventListener('play', handlePlay);
       audio.addEventListener('pause', handlePause);
 
       // Cleanup
       return () => {
+        audio.removeEventListener('loadstart', handleLoadStart);
+        audio.removeEventListener('canplay', handleCanPlay);
         audio.removeEventListener('play', handlePlay);
         audio.removeEventListener('pause', handlePause);
       };
     }
-  }, []);
+  }, [playRequested]);
 
   useEffect(() => {
-    // Stop playing when changing songs
+    // Reset loading state and stop playing when changing songs
+    setIsLoading(true);
     if (isPlaying) {
       setIsPlaying(false);
       if (audioRef.current) {
         audioRef.current.pause();
       }
     }
+    setPlayRequested(false);
   }, [selectedSong]);
 
   const togglePlay = async () => {
     if (audioRef.current) {
       if (isPlaying) {
         audioRef.current.pause();
+        setIsPlaying(false);
       } else {
-        const playPromise = audioRef.current.play();
-        if (playPromise !== undefined) {
-          await playPromise;
+        if (audioRef.current.readyState >= 3) {
+          // If audio is ready to play
+          const playPromise = audioRef.current.play();
+          if (playPromise !== undefined) {
+            await playPromise;
+            setIsPlaying(true);
+          }
+        } else {
+          // If audio is not ready, set playRequested flag
+          setPlayRequested(true);
         }
       }
-      setIsPlaying(!isPlaying);
     }
   };
 
@@ -105,7 +137,15 @@ export function Music({ title = "Music Selection" }: MusicProps) {
 
         {/* Player Controls */}
         <div className="md:col-span-2 flex flex-col justify-center">
-          <p className="text-center text-gray-300 mb-4">Now Playing: {selectedSong.title}</p>
+          <p className="text-center text-gray-300 mb-4">
+            {isLoading ? (
+              playRequested ? 
+                "Please wait... Track will play when ready" :
+                "Loading track..."
+            ) : (
+              `Now Playing: ${selectedSong.title}`
+            )}
+          </p>
 
           <audio 
             ref={audioRef}

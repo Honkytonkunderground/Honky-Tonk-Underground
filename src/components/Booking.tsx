@@ -1,6 +1,6 @@
 import { Mail, Phone } from 'lucide-react';
 import { useState } from 'react';
-import { Music } from './Music';
+import Music from './Music';
 
 export function Booking() {
   const [emailCopied, setEmailCopied] = useState(false);
