@@ -155,9 +155,11 @@ export default function Music({ title = "Music Selection" }: MusicProps) {
           />
           
           <div className="flex items-center justify-center gap-4">
-            <button
+          <button
               onClick={togglePlay}
               className="p-3 rounded-full bg-[#f59d0e] hover:bg-[#f5a523] transition-colors text-black"
+              aria-label={isPlaying ? "Pause" : "Play"}
+              aria-pressed={isPlaying}
             >
               {isPlaying ? (
                 <Pause className="w-8 h-8" />
@@ -169,6 +171,8 @@ export default function Music({ title = "Music Selection" }: MusicProps) {
             <button
               onClick={toggleMute}
               className="p-3 rounded-full bg-[#2a2422] hover:bg-[#332e2b] transition-colors"
+              aria-label={isMuted ? "Unmute" : "Mute"}
+              aria-pressed={isMuted}
             >
               {isMuted ? (
                 <VolumeX className="w-8 h-8" />
