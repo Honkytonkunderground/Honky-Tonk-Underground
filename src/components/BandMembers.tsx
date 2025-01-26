@@ -1,5 +1,5 @@
 import { Music } from 'lucide-react';
-import IMG_6261 from '../images/IMG_6261.jpg';
+import IMG_6261 from '/images/IMG_6261.jpg';
 
 const bandMembers = [
   {

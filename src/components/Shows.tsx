@@ -1,6 +1,6 @@
 import { Calendar, MapPin, Clock } from 'lucide-react';
-// import PastGig from '../videos/past-gig.mp4';
-import Dave from '../images/IMG_6261.jpg'
+// import PastGig from '/videos/past-gig.mp4';
+import Dave from '/images/IMG_6261.jpg'
 
 interface Show {
   date: string;
