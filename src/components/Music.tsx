@@ -16,7 +16,6 @@ export function Music({ title = "Music Selection" }: MusicProps) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
   const [selectedSong, setSelectedSong] = useState(songs[0]);
-  const [error, setError] = useState<string | null>(null);
   const audioRef = useRef<HTMLAudioElement>(null);
 
   useEffect(() => {
@@ -25,43 +24,22 @@ export function Music({ title = "Music Selection" }: MusicProps) {
       
       const audio = audioRef.current;
       
-      const handleError = (e: Event) => {
-        console.error('Audio error:', e);
-        const errorEvent = e as ErrorEvent;
-        setError(errorEvent.message || 'Error playing audio');
-      };
-
       const handlePlay = () => {
         console.log('Audio started playing');
-        setError(null);
       };
 
       const handlePause = () => {
         console.log('Audio paused');
       };
 
-      const handleLoadStart = () => {
-        console.log('Audio loading started');
-      };
-
-      const handleCanPlay = () => {
-        console.log('Audio can play');
-      };
-
       // Add event listeners
-      audio.addEventListener('error', handleError);
       audio.addEventListener('play', handlePlay);
       audio.addEventListener('pause', handlePause);
-      audio.addEventListener('loadstart', handleLoadStart);
-      audio.addEventListener('canplay', handleCanPlay);
 
       // Cleanup
       return () => {
-        audio.removeEventListener('error', handleError);
         audio.removeEventListener('play', handlePlay);
         audio.removeEventListener('pause', handlePause);
-        audio.removeEventListener('loadstart', handleLoadStart);
-        audio.removeEventListener('canplay', handleCanPlay);
       };
     }
   }, []);
@@ -74,26 +52,19 @@ export function Music({ title = "Music Selection" }: MusicProps) {
         audioRef.current.pause();
       }
     }
-    setError(null);
   }, [selectedSong]);
 
   const togglePlay = async () => {
     if (audioRef.current) {
-      try {
-        if (isPlaying) {
-          audioRef.current.pause();
-        } else {
-          const playPromise = audioRef.current.play();
-          if (playPromise !== undefined) {
-            await playPromise;
-            console.log('Playback started successfully');
-          }
+      if (isPlaying) {
+        audioRef.current.pause();
+      } else {
+        const playPromise = audioRef.current.play();
+        if (playPromise !== undefined) {
+          await playPromise;
         }
-        setIsPlaying(!isPlaying);
-      } catch (err) {
-        console.error('Playback failed:', err);
-        setError('Failed to play audio');
       }
+      setIsPlaying(!isPlaying);
     }
   };
 
@@ -113,7 +84,7 @@ export function Music({ title = "Music Selection" }: MusicProps) {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Song Selection */}
-        <div className="bg-gray-900 rounded-lg p-4">
+        <div className="bg-black/30 rounded-lg p-4">
           <h3 className="text-lg font-semibold mb-4">Select Track</h3>
           <div className="space-y-2">
             {songs.map((song) => (
@@ -122,8 +93,8 @@ export function Music({ title = "Music Selection" }: MusicProps) {
                 onClick={() => setSelectedSong(song)}
                 className={`w-full text-left px-4 py-2 rounded transition-colors ${
                   selectedSong.id === song.id
-                    ? 'bg-blue-600 text-white'
-                    : 'bg-gray-800 hover:bg-gray-700'
+                    ? 'bg-[#f59d0e] text-black'
+                    : 'bg-[#2a2422] hover:bg-[#332e2b] text-gray-300 hover:text-white'
                 }`}
               >
                 {song.title}
@@ -135,10 +106,6 @@ export function Music({ title = "Music Selection" }: MusicProps) {
         {/* Player Controls */}
         <div className="md:col-span-2 flex flex-col justify-center">
           <p className="text-center text-gray-300 mb-4">Now Playing: {selectedSong.title}</p>
-          
-          {error && (
-            <p className="text-red-500 text-center mb-4 text-sm">{error}</p>
-          )}
 
           <audio 
             ref={audioRef}
@@ -150,18 +117,18 @@ export function Music({ title = "Music Selection" }: MusicProps) {
           <div className="flex items-center justify-center gap-4">
             <button
               onClick={togglePlay}
-              className="p-3 rounded-full bg-blue-600 hover:bg-blue-700 transition-colors"
+              className="p-3 rounded-full bg-[#f59d0e] hover:bg-[#f5a523] transition-colors text-black"
             >
               {isPlaying ? (
                 <Pause className="w-8 h-8" />
               ) : (
-                <Play className="w-8 h-8" />
+                <Play className="w-8 h-8 relative left-0.5" />
               )}
             </button>
 
             <button
               onClick={toggleMute}
-              className="p-3 rounded-full bg-gray-700 hover:bg-gray-600 transition-colors"
+              className="p-3 rounded-full bg-[#2a2422] hover:bg-[#332e2b] transition-colors"
             >
               {isMuted ? (
                 <VolumeX className="w-8 h-8" />
