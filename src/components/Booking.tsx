@@ -1,5 +1,6 @@
 import { Mail, Phone } from 'lucide-react';
 import { useState } from 'react';
+import { Music } from './Music';
 
 export function Booking() {
   const [emailCopied, setEmailCopied] = useState(false);
@@ -22,6 +23,9 @@ export function Booking() {
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-10 md:mb-12">
           To book the best damn dive bar band...
         </h2>
+        <div className="py-10">
+          <Music title="Sample Our Music" />
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
           <button 
             onClick={() => handleCopy("honkytonkunderground21@gmail.com", true)}
