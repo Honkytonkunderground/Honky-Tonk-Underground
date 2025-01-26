@@ -6,10 +6,10 @@ interface MusicProps {
 }
 
 const songs = [
-  { id: 'crowd', title: 'Honky Tonk Crowd', src: '/music/honky-tonk-crowd.mp3' },
-  { id: 'blues', title: 'Workin\' Man Blues', src: '/music/working-man-blues.mp3' },
-  { id: 'home', title: 'Almost Home', src: '/music/almost-home.mp3' },
-  { id: 'bottle', title: 'Dust On The Bottle', src: '/music/dust-on-the-bottle.mp3' },
+  { id: 'crowd', title: 'Honky Tonk Crowd', src: '/music/crowd.mp3' },
+  { id: 'blues', title: 'Workin\' Man Blues', src: '/music/blues.mp3' },
+  { id: 'home', title: 'Almost Home', src: '/music/home.mp3' },
+  { id: 'bottle', title: 'Dust On The Bottle', src: '/music/bottle.mp3' },
 ];
 
 export function Music({ title = "Music Selection" }: MusicProps) {
