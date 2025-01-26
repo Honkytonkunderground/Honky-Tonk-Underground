@@ -1,3 +1,4 @@
+import React from 'react';
 import honkytonk from '/images/honkytonklogo.png';
 
 export function Hero() {
@@ -7,12 +8,25 @@ export function Hero() {
         className="absolute inset-0 bg-gradient-to-b bg-black/30 z-0"
       ></div>
       <div 
-        className="relative w-full max-w-screen-lg mx-auto h-[400px] aspect-w-16 aspect-h-9"
+        className="relative w-full max-w-screen-lg mx-auto h-96"
       >
         <img 
           src={honkytonk} 
           alt="Honkytonk" 
           className="object-contain w-full h-full"
+          loading="eager"
+          decoding="async"
+          fetchPriority="high"
+          style={{ contentVisibility: 'auto' }}
+          onLoad={(e: React.SyntheticEvent<HTMLImageElement>) => {
+            const requestIdleCallback = 
+              window.requestIdleCallback || 
+              ((cb: IdleRequestCallback) => setTimeout(cb, 1));
+              
+            requestIdleCallback(() => {
+              (e.target as HTMLImageElement).style.opacity = '1';
+            });
+          }}
         />
       </div>
     </header>
