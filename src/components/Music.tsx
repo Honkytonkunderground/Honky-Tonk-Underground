@@ -12,36 +12,17 @@ const songs = [
   { id: 'bottle', title: 'Dust On The Bottle', src: '/music/bottle.mp3' },
 ];
 
-export default function Music({ title = "Music Selection" }: MusicProps) {
+export function Music({ title = "Music Selection" }: MusicProps) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
   const [selectedSong, setSelectedSong] = useState(songs[0]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [playRequested, setPlayRequested] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
   useEffect(() => {
     if (audioRef.current) {
       audioRef.current.preload = 'auto';
-      
-      const audio = audioRef.current;
-      
-      const handleLoadStart = () => {
-        setIsLoading(true);
-      };
 
-      const handleCanPlay = () => {
-        setIsLoading(false);
-        if (playRequested) {
-          audio.play().then(() => {
-            setIsPlaying(true);
-            setPlayRequested(false);
-          }).catch(error => {
-            console.error('Playback failed:', error);
-            setPlayRequested(false);
-          });
-        }
-      };
+      const audio = audioRef.current;
 
       const handlePlay = () => {
         console.log('Audio started playing');
@@ -52,51 +33,38 @@ export default function Music({ title = "Music Selection" }: MusicProps) {
       };
 
       // Add event listeners
-      audio.addEventListener('loadstart', handleLoadStart);
-      audio.addEventListener('canplay', handleCanPlay);
       audio.addEventListener('play', handlePlay);
       audio.addEventListener('pause', handlePause);
 
       // Cleanup
       return () => {
-        audio.removeEventListener('loadstart', handleLoadStart);
-        audio.removeEventListener('canplay', handleCanPlay);
         audio.removeEventListener('play', handlePlay);
         audio.removeEventListener('pause', handlePause);
       };
     }
-  }, [playRequested]);
+  }, []);
 
   useEffect(() => {
-    // Reset loading state and stop playing when changing songs
-    setIsLoading(true);
+    // Stop playing when changing songs
     if (isPlaying) {
       setIsPlaying(false);
       if (audioRef.current) {
         audioRef.current.pause();
       }
     }
-    setPlayRequested(false);
   }, [selectedSong]);
 
   const togglePlay = async () => {
     if (audioRef.current) {
       if (isPlaying) {
         audioRef.current.pause();
-        setIsPlaying(false);
       } else {
-        if (audioRef.current.readyState >= 3) {
-          // If audio is ready to play
-          const playPromise = audioRef.current.play();
-          if (playPromise !== undefined) {
-            await playPromise;
-            setIsPlaying(true);
-          }
-        } else {
-          // If audio is not ready, set playRequested flag
-          setPlayRequested(true);
+        const playPromise = audioRef.current.play();
+        if (playPromise !== undefined) {
+          await playPromise;
         }
       }
+      setIsPlaying(!isPlaying);
     }
   };
 
@@ -137,15 +105,7 @@ export default function Music({ title = "Music Selection" }: MusicProps) {
 
         {/* Player Controls */}
         <div className="md:col-span-2 flex flex-col justify-center">
-          <p className="text-center text-gray-300 mb-4">
-            {isLoading ? (
-              playRequested ? 
-                "Please wait... Track will play when ready" :
-                "Loading track..."
-            ) : (
-              `Now Playing: ${selectedSong.title}`
-            )}
-          </p>
+          <p className="text-center text-gray-300 mb-4">Now Playing: {selectedSong.title}</p>
 
           <audio 
             ref={audioRef}
@@ -153,13 +113,11 @@ export default function Music({ title = "Music Selection" }: MusicProps) {
             className="hidden"
             onEnded={() => setIsPlaying(false)}
           />
-          
+
           <div className="flex items-center justify-center gap-4">
-          <button
+            <button
               onClick={togglePlay}
               className="p-3 rounded-full bg-[#f59d0e] hover:bg-[#f5a523] transition-colors text-black"
-              aria-label={isPlaying ? "Pause" : "Play"}
-              aria-pressed={isPlaying}
             >
               {isPlaying ? (
                 <Pause className="w-8 h-8" />
@@ -171,8 +129,6 @@ export default function Music({ title = "Music Selection" }: MusicProps) {
             <button
               onClick={toggleMute}
               className="p-3 rounded-full bg-[#2a2422] hover:bg-[#332e2b] transition-colors"
-              aria-label={isMuted ? "Unmute" : "Mute"}
-              aria-pressed={isMuted}
             >
               {isMuted ? (
                 <VolumeX className="w-8 h-8" />
