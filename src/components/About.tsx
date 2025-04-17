@@ -9,7 +9,7 @@ export function About() {
           Our Story
         </h2>
         <p className="text-lg text-gray-300 leading-relaxed">
-          Coming up...
+        If you love the 90’s country music vibe, we think you will be thrilled by what we bring to the stage. The vocals, the feel, and the energy will bring you right back to the heyday of country music. Don't just take our word for it; come experience it for yourself. We promise you'll be left craving more. So, get on out to one of our shows and let us take you on a journey you won't soon forget!
         </p>
       </div>
     </section>
