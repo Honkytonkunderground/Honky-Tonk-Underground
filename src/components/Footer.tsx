@@ -35,7 +35,7 @@ export function Footer() {
             <VisuallyHidden>Instagram</VisuallyHidden>
           </a>
           <a 
-            href="#" 
+            href="https://www.youtube.com/@honkytonkunderground" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="text-[#f59d0e] hover:text-white transition-colors"
