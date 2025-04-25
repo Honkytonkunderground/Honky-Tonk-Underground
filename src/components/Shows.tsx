@@ -39,7 +39,7 @@ const shows: Show[] = [
     venue: "The Westerner",
     location: '3360 S Redwood Rd, West Valley City, UT',
     time: '9:00 PM',
-    url: 'https://westernerslc.com',
+    url: 'https://westernerslc.com/events',
     pastShowUrl: 'https://www.instagram.com/honkytonkunderground/',
     pastShowVideo: ``,
     pastShowPicture: `${Dave}`
@@ -49,7 +49,7 @@ const shows: Show[] = [
     venue: "The Westerner",
     location: '3360 S Redwood Rd, West Valley City, UT',
     time: '9:00 PM',
-    url: 'https://westernerslc.com',
+    url: 'https://westernerslc.com/events',
     pastShowUrl: '',
     pastShowVideo: '',
     pastShowPicture: ''
@@ -59,7 +59,7 @@ const shows: Show[] = [
     venue: "The Westerner",
     location: '3360 S Redwood Rd, West Valley City, UT',
     time: '9:00 PM',
-    url: 'https://westernerslc.com',
+    url: 'https://westernerslc.com/events',
     pastShowUrl: '',
     pastShowVideo: '',
     pastShowPicture: ''
@@ -69,7 +69,7 @@ const shows: Show[] = [
     venue: "The Westerner",
     location: '3360 S Redwood Rd, West Valley City, UT',
     time: '9:00 PM',
-    url: 'https://westernerslc.com',
+    url: 'https://westernerslc.com/events',
     pastShowUrl: '',
     pastShowVideo: '',
     pastShowPicture: ''
