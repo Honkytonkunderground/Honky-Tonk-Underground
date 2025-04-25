@@ -39,7 +39,7 @@ const shows: Show[] = [
     venue: "The Westerner",
     location: '3360 S Redwood Rd, West Valley City, UT',
     time: '9:00 PM',
-    url: 'https://westernerslc.com/events',
+    url: 'https://westernerslc.com/event/live-music-honky-tonk-underground/',
     pastShowUrl: 'https://www.instagram.com/honkytonkunderground/',
     pastShowVideo: ``,
     pastShowPicture: `${Dave}`
@@ -49,8 +49,8 @@ const shows: Show[] = [
     venue: "The Westerner",
     location: '3360 S Redwood Rd, West Valley City, UT',
     time: '9:00 PM',
-    url: 'https://westernerslc.com/events',
-    pastShowUrl: '',
+    url: 'https://westernerslc.com/event/live-music-honky-tonk-underground/',
+    pastShowUrl: 'https://www.instagram.com/honkytonkunderground/',
     pastShowVideo: '',
     pastShowPicture: ''
   },
