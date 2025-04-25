@@ -79,7 +79,19 @@ const shows: Show[] = [
 export function Shows(): JSX.Element {
   const isPastShow = (showDate: string): boolean => {
     const today = new Date();
-    return new Date(showDate) < today;
+    // Set today's time to the beginning of the day (00:00:00.000)
+    // This ensures we are comparing dates only.
+    today.setHours(0, 0, 0, 0);
+
+    const showDateObject = new Date(showDate);
+    // showDateObject is implicitly set to the beginning of its day (00:00:00.000)
+    // when parsed from a date-only string.
+
+    // Now, the comparison checks if the show's date is strictly before today's date.
+    // Example:
+    // On April 25: today (April 25 00:00) is NOT > showDateObject (April 25 00:00) -> false
+    // On April 26: today (April 26 00:00) IS > showDateObject (April 25 00:00) -> true
+    return showDateObject < today;
   };
 
   return (
