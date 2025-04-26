@@ -1,3 +1,5 @@
+@import './assets/css/fonts.css'; /* Import your font definitions */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,6 +12,27 @@
   body {
     @apply bg-[#1b1917];
   }
+
+  /* Keep the custom font for h1, h2, and h3 - this overrides the html/body style */
+  h1, h2, h3 {
+    font-family: 'LHF Imperial', sans-serif;
+  }
+/* 
+  div {
+    font-family: 'Junior', sans-serif;
+    font-style: normal;
+    font-size: 27px;
+    line-height: 27px;
+    letter-spacing: 1px;
+  }
+
+  p {
+    font-family: 'Junior', sans-serif;
+    font-style: normal;
+    font-size: 27px;
+    line-height: 27px;
+  } */
+
 }
 
 @layer components {

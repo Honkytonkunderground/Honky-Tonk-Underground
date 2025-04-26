@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'LHF Imperial';
+    src: url('/fonts/LHFimperial.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Junior';
+    src: url('/fonts/Junior.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal; 
+    font-display: swap;
+    font-size: 27px;
+    line-height: 27px;
+}
+
+@font-face {
+    font-family: 'Bantan';
+    src: url('/fonts/Bantan.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal; 
+    font-display: swap;
+}
