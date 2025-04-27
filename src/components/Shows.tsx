@@ -52,7 +52,7 @@ const shows: Show[] = [
     url: 'https://westernerslc.com/event/live-music-honky-tonk-underground/',
     pastShowUrl: 'https://www.instagram.com/honkytonkunderground/',
     pastShowVideo: '',
-    pastShowPicture: ''
+    pastShowPicture: `${Dave}`
   },
   {
     date: 'September 5, 2025',
