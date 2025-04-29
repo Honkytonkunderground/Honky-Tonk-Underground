@@ -140,7 +140,7 @@ export function Shows(): JSX.Element {
                   <p className={`font-bold text-xl mb-2 ${isPastShow(show.date) ? 'text-gray-300' : 'text-white'}`}>
                     {show.date}
                   </p>
-                  <p className={`text-lg ${isPastShow(show.date) ? 'text-gray-400' : 'text-[#f59d0e]'}`}>
+                  <p className={`text-lg ${isPastShow(show.date) ? 'text-gray-400' : 'text-[#c64444]'}`}>
                     {show.venue}
                   </p>
                   {!isPastShow(show.date) && (

@@ -16,7 +16,13 @@
   /* Keep the custom font for h1, h2, and h3 - this overrides the html/body style */
   h1, h2, h3 {
     font-family: 'LHF Imperial', sans-serif;
+    color: #c64444;
   }
+
+  .fancy-color{
+    color: #c64444;
+  }
+
 /* 
   div {
     font-family: 'Junior', sans-serif;

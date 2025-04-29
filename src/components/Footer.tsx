@@ -18,7 +18,7 @@ export function Footer() {
             href="https://www.facebook.com/honkytonkunderground" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="text-[#f59d0e] hover:text-white transition-colors"
+            className="text-[#c64444] hover:text-white transition-colors"
             aria-label="Visit our Facebook page"
           >
             <Facebook className="w-8 h-8" />
@@ -28,7 +28,7 @@ export function Footer() {
             href="https://www.instagram.com/honkytonkunderground" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="text-[#f59d0e] hover:text-white transition-colors"
+            className="text-[#c64444] hover:text-white transition-colors"
             aria-label="Visit our Instagram page"
           >
             <Instagram className="w-8 h-8" />
@@ -38,7 +38,7 @@ export function Footer() {
             href="https://www.youtube.com/@honkytonkunderground" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="text-[#f59d0e] hover:text-white transition-colors"
+            className="text-[#c64444] hover:text-white transition-colors"
             aria-label="Visit our YouTube channel"
           >
             <Youtube className="w-8 h-8" />

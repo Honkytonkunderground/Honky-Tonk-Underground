@@ -78,7 +78,7 @@ export function Music({ title = "Music Selection" }: MusicProps) {
   return (
     <div className="bg-[#2a2422] p-6 sm:p-8 rounded-lg transition-colors text-left">
       <div className="flex items-center justify-center gap-2 mb-6">
-        <MusicIcon className="w-6 h-6" />
+        <MusicIcon className="fancy-color sw-6 h-6" />
         <h2 className="text-xl font-semibold">{title}</h2>
       </div>
 
@@ -93,8 +93,8 @@ export function Music({ title = "Music Selection" }: MusicProps) {
                 onClick={() => setSelectedSong(song)}
                 className={`w-full text-left px-4 py-2 rounded transition-colors ${
                   selectedSong.id === song.id
-                    ? 'bg-[#f59d0e] text-black'
-                    : 'bg-[#2a2422] hover:bg-[#332e2b] text-gray-300 hover:text-white'
+                    ? 'bg-[#c64444] text-black'
+                    : 'bg-[#2a2422] hover:bg-[#c64444] text-gray-300 hover:text-white'
                 }`}
               >
                 {song.title}
@@ -117,7 +117,7 @@ export function Music({ title = "Music Selection" }: MusicProps) {
           <div className="flex items-center justify-center gap-4">
             <button
               onClick={togglePlay}
-              className="p-3 rounded-full bg-[#f59d0e] hover:bg-[#f5a523] transition-colors text-black"
+              className="p-3 rounded-full bg-[#c64444] hover:bg-[#d96969] transition-colors text-black"
             >
               {isPlaying ? (
                 <Pause className="w-8 h-8" />
@@ -128,7 +128,7 @@ export function Music({ title = "Music Selection" }: MusicProps) {
 
             <button
               onClick={toggleMute}
-              className="p-3 rounded-full bg-[#2a2422] hover:bg-[#332e2b] transition-colors"
+              className="fancy-color p-3 rounded-full bg-[#2a2422] hover:bg-[#332e2b] transition-colors"
             >
               {isMuted ? (
                 <VolumeX className="w-8 h-8" />
