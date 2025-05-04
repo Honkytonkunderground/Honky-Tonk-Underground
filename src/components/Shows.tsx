@@ -1,6 +1,7 @@
 import { Calendar, MapPin, Clock } from 'lucide-react';
-// import PastGig from '/videos/past-gig.mp4';
-import Dave from '/images/IMG_6261.jpg'
+import PastGig1 from '/videos/04-25-2025.mp4';
+import PastGig2 from '/videos/04-26-2025.mp4';
+import Dave from '/images/IMG_6261.jpg';
 
 interface Show {
   date: string;
@@ -40,8 +41,8 @@ const shows: Show[] = [
     location: '3360 S Redwood Rd, West Valley City, UT',
     time: '9:00 PM',
     url: 'https://westernerslc.com/event/live-music-honky-tonk-underground/',
-    pastShowUrl: 'https://www.instagram.com/honkytonkunderground/',
-    pastShowVideo: ``,
+    pastShowUrl: 'https://www.instagram.com/reel/DJFQMyGR5Rz/?igsh=MXZ2c21taDJ5aDA2ZA%3D%3D',
+    pastShowVideo: `${PastGig1}`,
     pastShowPicture: `${Dave}`
   },
   {
@@ -50,8 +51,8 @@ const shows: Show[] = [
     location: '3360 S Redwood Rd, West Valley City, UT',
     time: '9:00 PM',
     url: 'https://westernerslc.com/event/live-music-honky-tonk-underground/',
-    pastShowUrl: 'https://www.instagram.com/honkytonkunderground/',
-    pastShowVideo: '',
+    pastShowUrl: 'https://www.instagram.com/reel/DJFQMyGR5Rz/?igsh=MXZ2c21taDJ5aDA2ZA%3D%3D',
+    pastShowVideo: `${PastGig2}`,
     pastShowPicture: `${Dave}`
   },
   {
