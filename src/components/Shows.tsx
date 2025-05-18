@@ -75,6 +75,26 @@ const shows: Show[] = [
     pastShowVideo: '',
     pastShowPicture: ''
   },
+  {
+    date: 'October 10, 2025',
+    venue: "SCOREZ",
+    location: '571 W State Street, Lehi, UT',
+    time: '9:00 PM',
+    url: 'https://westernerslc.com/events',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: ''
+  },
+  {
+    date: 'January 2, 2026',
+    venue: "The Westerner",
+    location: '3360 S Redwood Rd, West Valley City, UT',
+    time: '9:00 PM',
+    url: 'https://www.scorez-sports-bar.com/',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: ''
+  },
 ];
 
 export function Shows(): JSX.Element {
