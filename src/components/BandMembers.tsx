@@ -56,7 +56,7 @@ export function BandMembers() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-[#f59d0e] mb-1">{member.name}</h3>
+                <h3 className="text-xl font-bold text-[#c64444] mb-1">{member.name}</h3>
                 <p className="text-white/80 text-sm mb-3">{member.role}</p>
                 <p className="text-gray-400 text-sm leading-relaxed">{member.bio}</p>
               </div>
