@@ -13,8 +13,8 @@ function App() {
       <Shows />
       {/* <BandMembers /> */}
       {/* <Venue /> */}
-      <About />
       <Booking />
+      <About />
       <Footer />
     </div>
   );
