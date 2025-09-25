@@ -63,7 +63,7 @@ const shows: Show[] = [
     url: 'https://westernerslc.com/events',
     pastShowUrl: '',
     pastShowVideo: '',
-    pastShowPicture: ''
+    pastShowPicture: `${Dave}`
   },
   {
     date: 'September 6, 2025',
@@ -73,7 +73,7 @@ const shows: Show[] = [
     url: 'https://westernerslc.com/events',
     pastShowUrl: '',
     pastShowVideo: '',
-    pastShowPicture: ''
+    pastShowPicture: `${Dave}`
   },
   {
     date: 'October 10, 2025',
