@@ -83,7 +83,7 @@ const shows: Show[] = [
     url: 'https://www.scorez-sports-bar.com/',
     pastShowUrl: '',
     pastShowVideo: '',
-    pastShowPicture: ''
+    pastShowPicture: `${Dave}`
   },
   {
     date: 'January 2, 2026',

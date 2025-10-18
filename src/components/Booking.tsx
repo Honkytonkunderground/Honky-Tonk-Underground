@@ -1,6 +1,7 @@
 import { Mail, Phone } from 'lucide-react';
 import { useState } from 'react';
 import { Music } from './Music';
+import { Performances } from './Performances';
 
 export function Booking() {
   const [emailCopied, setEmailCopied] = useState(false);
@@ -47,8 +48,11 @@ export function Booking() {
             </div>
           </button>
         </div>
-        <div className="py-10">
+        {/* <div className="py-10">
           <Music title="Sample Our Music" />
+        </div> */}
+        <div className='py-10'>
+          <Performances title="Sample Our Perfomance" />
         </div>
       </div>
     </section>
