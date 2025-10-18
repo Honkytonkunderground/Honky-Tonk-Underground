@@ -196,12 +196,21 @@ export function Performances({ title = "Sample Our Performances" }: Performances
           </button>
         </div>
 
-        <div 
-          className="relative bg-black/30 rounded-lg overflow-hidden"
-          onTouchStart={handleTouchStart}
-          onTouchMove={handleTouchMove}
-          onTouchEnd={handleTouchEnd}
-        >
+        <div className="relative bg-black/30 rounded-lg overflow-hidden">
+          {/* Swipe detection overlay */}
+          <div 
+            className="absolute inset-0 z-10 pointer-events-none"
+            onTouchStart={(e) => {
+              e.currentTarget.style.pointerEvents = 'auto';
+              handleTouchStart(e);
+            }}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={(e) => {
+              handleTouchEnd();
+              e.currentTarget.style.pointerEvents = 'none';
+            }}
+          />
+          
           <div className={`relative ${
             selectedPerformance.type === 'youtube-short' || selectedPerformance.type === 'instagram'
               ? 'aspect-[9/16] max-w-[360px] mx-auto'
@@ -219,14 +228,14 @@ export function Performances({ title = "Sample Our Performances" }: Performances
           {/* Navigation Arrows */}
           <button
             onClick={goToPrevious}
-            className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-colors"
+            className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-colors z-20"
             aria-label="Previous video"
           >
             <ChevronLeft className="w-6 h-6" />
           </button>
           <button
             onClick={goToNext}
-            className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-colors"
+            className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-colors z-20"
             aria-label="Next video"
           >
             <ChevronRight className="w-6 h-6" />
