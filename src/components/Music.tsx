@@ -7,10 +7,9 @@ interface MusicProps {
 
 const songs = [
   { id: 'jukebox', title: 'Don\'t Rock The Jukebox', src: '/music/jukebox.mp3' },
-  { id: 'satin', title: 'Satin Sheets', src: '/music/satin.mp3' },
   { id: 'hank', title: 'I Don\'t Think Hank Done It This Way', src: '/music/hank.mp3' },
+  { id: 'sheets', title: 'Satin Sheets', src: '/music/sheets.mp3' },
   { id: 'turned', title: 'I Left Something Turned On At Home', src: '/music/turned.mp3' },
-  { id: 'habits', title: 'Old Habits', src: '/music/habits.mp3' }
   // { id: 'atHome', title: 'Honky Tonk Crowd', src: '/music/crowd.mp3' },
   // { id: 'crowd', title: 'Honky Tonk Crowd', src: '/music/crowd.mp3' },
   // { id: 'blues', title: 'Workin\' Man Blues', src: '/music/blues.mp3' },
