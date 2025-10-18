@@ -248,7 +248,7 @@ export function Performances({ title = "Sample Our Performances" }: Performances
             {getTypeLabel(selectedPerformance.type)}
           </p>
           <p className="text-xs text-gray-500 mt-2">
-            Swipe or use arrows to navigate
+            Use arrows to navigate
           </p>
         </div>
 
