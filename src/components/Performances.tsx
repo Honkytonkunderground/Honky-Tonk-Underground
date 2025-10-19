@@ -32,8 +32,6 @@ const performances = [
 export function Performances({ title = "Sample Our Performances" }: PerformancesProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [copied, setCopied] = useState(false);
-  const [touchStart, setTouchStart] = useState(0);
-  const [touchEnd, setTouchEnd] = useState(0);
 
   const selectedPerformance = performances[currentIndex];
 
@@ -64,32 +62,6 @@ export function Performances({ title = "Sample Our Performances" }: Performances
 
   const goToNext = () => {
     setCurrentIndex((prev) => (prev === performances.length - 1 ? 0 : prev + 1));
-  };
-
-  const handleTouchStart = (e: React.TouchEvent) => {
-    setTouchStart(e.targetTouches[0].clientX);
-  };
-
-  const handleTouchMove = (e: React.TouchEvent) => {
-    setTouchEnd(e.targetTouches[0].clientX);
-  };
-
-  const handleTouchEnd = () => {
-    if (!touchStart || !touchEnd) return;
-    
-    const distance = touchStart - touchEnd;
-    const isLeftSwipe = distance > 50;
-    const isRightSwipe = distance < -50;
-
-    if (isLeftSwipe) {
-      goToNext();
-    }
-    if (isRightSwipe) {
-      goToPrevious();
-    }
-
-    setTouchStart(0);
-    setTouchEnd(0);
   };
 
   return (
@@ -149,7 +121,7 @@ export function Performances({ title = "Sample Our Performances" }: Performances
             </button>
           </div>
 
-          <div className="bg-black/30 rounded-lg overflow-hidden">
+          <div className="bg-black/30 rounded-lg overflow-hidden" onClick={(e) => e.stopPropagation()}>
             <div className={`relative ${
               selectedPerformance.type === 'youtube-short' || selectedPerformance.type === 'instagram'
                 ? 'aspect-[9/16] max-w-[360px] mx-auto'
@@ -197,20 +169,6 @@ export function Performances({ title = "Sample Our Performances" }: Performances
         </div>
 
         <div className="relative bg-black/30 rounded-lg overflow-hidden">
-          {/* Swipe detection overlay */}
-          <div 
-            className="absolute inset-0 z-10 pointer-events-none"
-            onTouchStart={(e) => {
-              e.currentTarget.style.pointerEvents = 'auto';
-              handleTouchStart(e);
-            }}
-            onTouchMove={handleTouchMove}
-            onTouchEnd={(e) => {
-              handleTouchEnd();
-              e.currentTarget.style.pointerEvents = 'none';
-            }}
-          />
-          
           <div className={`relative ${
             selectedPerformance.type === 'youtube-short' || selectedPerformance.type === 'instagram'
               ? 'aspect-[9/16] max-w-[360px] mx-auto'
