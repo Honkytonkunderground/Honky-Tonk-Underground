@@ -126,7 +126,7 @@ const shows: Show[] = [
     pastShowPicture: ''
   },
   {
-    date: 'February 27, 2025',
+    date: 'February 27, 2026',
     venue: "SCOREZ",
     location: '571 W State Street, Lehi, UT',
     time: '9:00 PM',
