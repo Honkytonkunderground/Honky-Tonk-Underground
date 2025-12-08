@@ -85,26 +85,26 @@ const shows: Show[] = [
     pastShowVideo: '',
     pastShowPicture: `${Dave}`
   },
-  {
-    date: 'January 2, 2026',
-    venue: "The Westerner",
-    location: '3360 S Redwood Rd, West Valley City, UT',
-    time: '9:00 PM',
-    url: 'https://westernerslc.com/events',
-    pastShowUrl: '',
-    pastShowVideo: '',
-    pastShowPicture: ''
-  },
-  {
-    date: 'January 3, 2026',
-    venue: "The Westerner",
-    location: '3360 S Redwood Rd, West Valley City, UT',
-    time: '9:00 PM',
-    url: 'https://westernerslc.com/events',
-    pastShowUrl: '',
-    pastShowVideo: '',
-    pastShowPicture: ''
-  },
+  // {
+  //   date: 'January 2, 2026',
+  //   venue: "The Westerner",
+  //   location: '3360 S Redwood Rd, West Valley City, UT',
+  //   time: '9:00 PM',
+  //   url: 'https://westernerslc.com/events',
+  //   pastShowUrl: '',
+  //   pastShowVideo: '',
+  //   pastShowPicture: ''
+  // },
+  // {
+  //   date: 'January 3, 2026',
+  //   venue: "The Westerner",
+  //   location: '3360 S Redwood Rd, West Valley City, UT',
+  //   time: '9:00 PM',
+  //   url: 'https://westernerslc.com/events',
+  //   pastShowUrl: '',
+  //   pastShowVideo: '',
+  //   pastShowPicture: ''
+  // },
   {
     date: 'February 20, 2026',
     venue: "The Westerner",
