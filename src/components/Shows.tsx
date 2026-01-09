@@ -136,7 +136,7 @@ const shows: Show[] = [
     pastShowPicture: ''
   },
   {
-    date: 'May 8, 2026',
+    date: 'May 15, 2026',
     venue: "The Westerner",
     location: '3360 S Redwood Rd, West Valley City, UT',
     time: '9:00 PM',
@@ -146,7 +146,7 @@ const shows: Show[] = [
     pastShowPicture: ''
   },
   {
-    date: 'May 9, 2026',
+    date: 'May 16, 2026',
     venue: "The Westerner",
     location: '3360 S Redwood Rd, West Valley City, UT',
     time: '9:00 PM',
