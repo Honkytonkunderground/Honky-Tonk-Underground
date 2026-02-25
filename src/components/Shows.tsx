@@ -113,7 +113,7 @@ const shows: Show[] = [
     url: 'https://westernerslc.com/events',
     pastShowUrl: '',
     pastShowVideo: '',
-    pastShowPicture: ''
+    pastShowPicture: `${Dave}`
   },
   {
     date: 'February 21, 2026',
@@ -123,7 +123,7 @@ const shows: Show[] = [
     url: 'https://westernerslc.com/events',
     pastShowUrl: '',
     pastShowVideo: '',
-    pastShowPicture: ''
+    pastShowPicture: `${Dave}`
   },
   {
     date: 'February 27, 2026',
@@ -133,7 +133,7 @@ const shows: Show[] = [
     url: 'https://www.scorez-sports-bar.com/',
     pastShowUrl: '',
     pastShowVideo: '',
-    pastShowPicture: ''
+    pastShowPicture: `${Dave}`
   },
   {
     date: 'May 15, 2026',
@@ -143,7 +143,7 @@ const shows: Show[] = [
     url: 'https://westernerslc.com/events',
     pastShowUrl: '',
     pastShowVideo: '',
-    pastShowPicture: ''
+    pastShowPicture: `${Dave}`
   },
   {
     date: 'May 16, 2026',
@@ -153,7 +153,7 @@ const shows: Show[] = [
     url: 'https://westernerslc.com/events',
     pastShowUrl: '',
     pastShowVideo: '',
-    pastShowPicture: ''
+    pastShowPicture: `${Dave}`
   },
   {
     date: 'August 14, 2026',
@@ -163,7 +163,7 @@ const shows: Show[] = [
     url: 'https://www.scorez-sports-bar.com/',
     pastShowUrl: '',
     pastShowVideo: '',
-    pastShowPicture: ''
+    pastShowPicture: `${Dave}`
   },
   {
     date: 'November 20, 2026',
@@ -173,7 +173,7 @@ const shows: Show[] = [
     url: 'https://westernerslc.com/events',
     pastShowUrl: '',
     pastShowVideo: '',
-    pastShowPicture: ''
+    pastShowPicture: `${Dave}`
   },
   {
     date: 'November 21, 2026',
@@ -183,7 +183,7 @@ const shows: Show[] = [
     url: 'https://westernerslc.com/events',
     pastShowUrl: '',
     pastShowVideo: '',
-    pastShowPicture: ''
+    pastShowPicture: `${Dave}`
   },
 ];
 
