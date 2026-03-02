@@ -136,6 +136,16 @@ const shows: Show[] = [
     pastShowPicture: `${Dave}`
   },
   {
+    date: 'April 11, 2026',
+    venue: "The Engine Room and Pub",
+    location: '1388 S 300 W #400 SLC, UT',
+    time: '9:00 PM',
+    url: 'https://www.engineroompub.com/',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+  {
     date: 'May 15, 2026',
     venue: "The Westerner",
     location: '3360 S Redwood Rd, West Valley City, UT',
