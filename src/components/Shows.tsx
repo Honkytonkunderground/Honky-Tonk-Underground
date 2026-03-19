@@ -1,4 +1,5 @@
-import { Calendar, MapPin, Clock } from 'lucide-react';
+import { Calendar, MapPin, Clock, ChevronDown, ChevronUp } from 'lucide-react';
+import { useState } from 'react';
 import PastGig1 from '/videos/04-25-2025.mp4';
 import PastGig2 from '/videos/04-26-2025.mp4';
 import Dave from '/images/IMG_6261.jpg';
@@ -15,26 +16,6 @@ interface Show {
 }
 
 const shows: Show[] = [
-  // {
-  //   date: 'April 22, 2024',
-  //   venue: "The Westerner",
-  //   location: '3360 S Redwood Rd, West Valley City, UT',
-  //   time: '9:00 PM',
-  //   url: 'https://westernerslc.com',
-  //   pastShowUrl: 'https://www.instagram.com/honkytonkunderground/',
-  //   pastShowVideo: `${PastGig}`,
-  //   pastShowPicture: ''
-  // },
-  // {
-  //   date: 'April 24, 2024',
-  //   venue: "The Westerner",
-  //   location: '3360 S Redwood Rd, West Valley City, UT',
-  //   time: '9:00 PM',
-  //   url: 'https://westernerslc.com',
-  //   pastShowUrl: 'https://www.instagram.com/honkytonkunderground/',
-  //   pastShowVideo: '',
-  //   pastShowPicture: `${Dave}`
-  // },
   {
     date: 'April 25, 2025',
     venue: "The Westerner",
@@ -85,26 +66,6 @@ const shows: Show[] = [
     pastShowVideo: '',
     pastShowPicture: `${Dave}`
   },
-  // {
-  //   date: 'January 2, 2026',
-  //   venue: "The Westerner",
-  //   location: '3360 S Redwood Rd, West Valley City, UT',
-  //   time: '9:00 PM',
-  //   url: 'https://westernerslc.com/events',
-  //   pastShowUrl: '',
-  //   pastShowVideo: '',
-  //   pastShowPicture: ''
-  // },
-  // {
-  //   date: 'January 3, 2026',
-  //   venue: "The Westerner",
-  //   location: '3360 S Redwood Rd, West Valley City, UT',
-  //   time: '9:00 PM',
-  //   url: 'https://westernerslc.com/events',
-  //   pastShowUrl: '',
-  //   pastShowVideo: '',
-  //   pastShowPicture: ''
-  // },
   {
     date: 'February 20, 2026',
     venue: "The Westerner",
@@ -141,6 +102,16 @@ const shows: Show[] = [
     location: '1388 S 300 W #400 SLC, UT',
     time: '9:00 PM',
     url: 'https://www.engineroompub.com/',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+  {
+    date: 'May 2, 2026',
+    venue: "SCOREZ",
+    location: '571 W State Street, Lehi, UT',
+    time: '9:00 PM',
+    url: 'https://www.scorez-sports-bar.com/',
     pastShowUrl: '',
     pastShowVideo: '',
     pastShowPicture: `${Dave}`
@@ -197,24 +168,81 @@ const shows: Show[] = [
   },
 ];
 
-// test another push change.
-
 export function Shows(): JSX.Element {
+  const [show2025, setShow2025] = useState(false);
+
   const isPastShow = (showDate: string): boolean => {
     const today = new Date();
-    // Set today's time to the beginning of the day (00:00:00.000)
-    // This ensures we are comparing dates only.
     today.setHours(0, 0, 0, 0);
+    return new Date(showDate) < today;
+  };
 
-    const showDateObject = new Date(showDate);
-    // showDateObject is implicitly set to the beginning of its day (00:00:00.000)
-    // when parsed from a date-only string.
+  const getLink = (show: Show): string =>
+    isPastShow(show.date) && show.pastShowUrl ? show.pastShowUrl : show.url;
 
-    // Now, the comparison checks if the show's date is strictly before today's date.
-    // Example:
-    // On April 25: today (April 25 00:00) is NOT > showDateObject (April 25 00:00) -> false
-    // On April 26: today (April 26 00:00) IS > showDateObject (April 25 00:00) -> true
-    return showDateObject < today;
+  const shows2025 = shows.filter(s => new Date(s.date).getFullYear() === 2025);
+  const shows2026 = shows.filter(s => new Date(s.date).getFullYear() === 2026);
+
+  const cardClass = "relative overflow-hidden bg-[#2a2422] p-6 rounded-lg hover:bg-[#332e2b] transition-colors group cursor-pointer";
+
+  const renderCard = (show: Show, index: number) => {
+    const past = isPastShow(show.date);
+    return (
+      <div
+        key={index}
+        className={cardClass}
+        onClick={() => window.open(getLink(show), '_blank')}
+      >
+        {past && (
+          <div className="absolute inset-0 overflow-hidden">
+            {show.pastShowVideo ? (
+              <video
+                className="w-full h-full object-cover opacity-30 group-hover:opacity-40 transition-opacity"
+                autoPlay
+                muted
+                loop
+                playsInline
+              >
+                <source src={show.pastShowVideo} type="video/mp4" />
+              </video>
+            ) : (
+              <img
+                src={show.pastShowPicture}
+                alt={`Past show at ${show.venue}`}
+                className="w-full h-full object-cover opacity-30 group-hover:opacity-40 transition-opacity"
+              />
+            )}
+          </div>
+        )}
+        {past && (
+          <div className="absolute -right-16 top-8 transform rotate-45 bg-red-500 text-white py-1 w-64 text-center font-bold z-10">
+            Y'all Missed it!
+          </div>
+        )}
+        <div className="flex items-start gap-4 relative z-10">
+          <div className="flex-1">
+            <p className={`font-bold text-xl mb-2 ${past ? 'text-gray-300' : 'text-white'}`}>
+              {show.date}
+            </p>
+            <p className={`text-lg ${past ? 'text-gray-400' : 'text-[#c64444]'}`}>
+              {show.venue}
+            </p>
+            {!past && (
+              <>
+                <div className="flex items-center gap-2 text-gray-400 mt-2">
+                  <MapPin className="w-4 h-4" />
+                  <span>{show.location}</span>
+                </div>
+                <div className="flex items-center gap-2 text-gray-400">
+                  <Clock className="w-4 h-4" />
+                  <span>{show.time}</span>
+                </div>
+              </>
+            )}
+          </div>
+        </div>
+      </div>
+    );
   };
 
   return (
@@ -224,65 +252,32 @@ export function Shows(): JSX.Element {
           Upcoming Shows
           <Calendar className="w-8 h-8" />
         </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {shows.map((show, index) => (
-            <a 
-              key={index} 
-              href={isPastShow(show.date) && show.pastShowUrl ? show.pastShowUrl : show.url}
-              target="_blank" 
-              className="relative overflow-hidden bg-[#2a2422] p-6 rounded-lg hover:bg-[#332e2b] transition-colors group"
-            >
-              {isPastShow(show.date) && (
-                <div className="absolute inset-0 overflow-hidden">
-                  {show.pastShowVideo ? (
-                    <video 
-                      className="w-full h-full object-cover opacity-30 group-hover:opacity-40 transition-opacity"
-                      autoPlay 
-                      muted 
-                      loop 
-                      playsInline
-                    >
-                      <source src={show.pastShowVideo} type="video/mp4" />
-                    </video>
-                  ) : (
-                    <img 
-                      src={show.pastShowPicture} 
-                      alt={`Past show at ${show.venue}`} 
-                      className="w-full h-full object-cover opacity-30 group-hover:opacity-40 transition-opacity"
-                    />
-                  )}
-                </div>
-              )}
-              {isPastShow(show.date) && (
-                <div className="absolute -right-16 top-8 transform rotate-45 bg-red-500 text-white py-1 w-64 text-center font-bold z-10">
-                  Y'all Missed it!
-                </div>
-              )}
-              <div className="flex items-start gap-4 relative z-10">
-                <div className="flex-1">
-                  <p className={`font-bold text-xl mb-2 ${isPastShow(show.date) ? 'text-gray-300' : 'text-white'}`}>
-                    {show.date}
-                  </p>
-                  <p className={`text-lg ${isPastShow(show.date) ? 'text-gray-400' : 'text-[#c64444]'}`}>
-                    {show.venue}
-                  </p>
-                  {!isPastShow(show.date) && (
-                    <>
-                      <div className="flex items-center gap-2 text-gray-400 mt-2">
-                        <MapPin className="w-4 h-4" />
-                        <span>{show.location}</span>
-                      </div>
-                      <div className="flex items-center gap-2 text-gray-400">
-                        <Clock className="w-4 h-4" />
-                        <span>{show.time}</span>
-                      </div>
-                    </>
-                  )}
-                </div>
-              </div>
-            </a>
-          ))}
+
+        <div className="mb-10">
+          <button
+            onClick={() => setShow2025(prev => !prev)}
+            className="w-full flex items-center justify-between px-6 py-4 bg-[#2a2422] hover:bg-[#332e2b] rounded-lg transition-colors mb-4 group"
+          >
+            <span className="text-xl font-bold text-gray-400 group-hover:text-gray-200 transition-colors">
+              2025 Shows
+            </span>
+            {show2025 ? (
+              <ChevronUp className="w-5 h-5 text-gray-400 group-hover:text-gray-200 transition-colors" />
+            ) : (
+              <ChevronDown className="w-5 h-5 text-gray-400 group-hover:text-gray-200 transition-colors" />
+            )}
+          </button>
+          {show2025 && (
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {shows2025.map((show, index) => renderCard(show, index))}
+            </div>
+          )}
         </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {shows2026.map((show, index) => renderCard(show, index))}
+        </div>
+
       </div>
     </section>
   );
