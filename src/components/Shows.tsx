@@ -147,6 +147,16 @@ const shows: Show[] = [
     pastShowPicture: `${Dave}`
   },
   {
+    date: 'August 15, 2026',
+    venue: "SCOREZ",
+    location: '571 W State Street, Lehi, UT',
+    time: '9:00 PM',
+    url: 'https://www.scorez-sports-bar.com/',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+  {
     date: 'November 20, 2026',
     venue: "The Westerner",
     location: '3360 S Redwood Rd, West Valley City, UT',
