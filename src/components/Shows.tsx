@@ -137,21 +137,21 @@ const shows: Show[] = [
     pastShowPicture: `${Dave}`
   },
   {
-    date: 'August 14, 2026',
-    venue: "SCOREZ",
-    location: '571 W State Street, Lehi, UT',
-    time: '9:00 PM',
-    url: 'https://www.scorez-sports-bar.com/',
-    pastShowUrl: '',
-    pastShowVideo: '',
-    pastShowPicture: `${Dave}`
-  },
-  {
     date: 'July 17, 2026',
     venue: "The Engine Room and Pub",
     location: '1388 S 300 W #400 SLC, UT',
     time: '9:00 PM',
     url: 'https://www.engineroompub.com/',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+  {
+    date: 'August 14, 2026',
+    venue: "SCOREZ",
+    location: '571 W State Street, Lehi, UT',
+    time: '9:00 PM',
+    url: 'https://www.scorez-sports-bar.com/',
     pastShowUrl: '',
     pastShowVideo: '',
     pastShowPicture: `${Dave}`
