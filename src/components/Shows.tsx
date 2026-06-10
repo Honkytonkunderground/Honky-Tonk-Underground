@@ -147,11 +147,31 @@ const shows: Show[] = [
     pastShowPicture: `${Dave}`
   },
   {
+    date: 'July 17, 2026',
+    venue: "The Engine Room and Pub",
+    location: '1388 S 300 W #400 SLC, UT',
+    time: '9:00 PM',
+    url: 'https://www.engineroompub.com/',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+  {
     date: 'August 15, 2026',
     venue: "SCOREZ",
     location: '571 W State Street, Lehi, UT',
     time: '9:00 PM',
     url: 'https://www.scorez-sports-bar.com/',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+  {
+    date: 'August 20, 2026',
+    venue: "Bonneville Salt Dome",
+    location: 'Bonneville Salt Dome, 850 N Bonneville Blvd, Salt Lake City, UT 84103',
+    time: '7:00 PM',
+    url: 'https://www.slc.gov/events/2026/04/02/dancing-under-the-stars/',
     pastShowUrl: '',
     pastShowVideo: '',
     pastShowPicture: `${Dave}`
