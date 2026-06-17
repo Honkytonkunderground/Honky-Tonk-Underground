@@ -167,7 +167,7 @@ const shows: Show[] = [
     pastShowPicture: `${Dave}`
   },
   {
-    date: 'August 20, 2026',
+    date: 'September 17, 2026',
     venue: "Bonneville Salt Dome",
     location: 'Bonneville Salt Dome, 850 N Bonneville Blvd, Salt Lake City, UT 84103',
     time: '7:00 PM',
