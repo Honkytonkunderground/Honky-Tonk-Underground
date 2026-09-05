@@ -18,7 +18,7 @@ interface Show {
 const shows: Show[] = [
   {
     date: 'April 25, 2025',
-    venue: "The Westerner",
+    venue: 'The Westerner',
     location: '3360 S Redwood Rd, West Valley City, UT',
     time: '9:00 PM',
     url: 'https://westernerslc.com/event/live-music-honky-tonk-underground/',
@@ -28,7 +28,7 @@ const shows: Show[] = [
   },
   {
     date: 'April 26, 2025',
-    venue: "The Westerner",
+    venue: 'The Westerner',
     location: '3360 S Redwood Rd, West Valley City, UT',
     time: '9:00 PM',
     url: 'https://westernerslc.com/event/live-music-honky-tonk-underground/',
@@ -38,7 +38,7 @@ const shows: Show[] = [
   },
   {
     date: 'September 5, 2025',
-    venue: "The Westerner",
+    venue: 'The Westerner',
     location: '3360 S Redwood Rd, West Valley City, UT',
     time: '9:00 PM',
     url: 'https://westernerslc.com/events',
@@ -48,7 +48,7 @@ const shows: Show[] = [
   },
   {
     date: 'September 6, 2025',
-    venue: "The Westerner",
+    venue: 'The Westerner',
     location: '3360 S Redwood Rd, West Valley City, UT',
     time: '9:00 PM',
     url: 'https://westernerslc.com/events',
@@ -58,7 +58,7 @@ const shows: Show[] = [
   },
   {
     date: 'October 10, 2025',
-    venue: "SCOREZ",
+    venue: 'SCOREZ',
     location: '571 W State Street, Lehi, UT',
     time: '9:00 PM',
     url: 'https://www.scorez-sports-bar.com/',
@@ -68,7 +68,7 @@ const shows: Show[] = [
   },
   {
     date: 'February 20, 2026',
-    venue: "The Westerner",
+    venue: 'The Westerner',
     location: '3360 S Redwood Rd, West Valley City, UT',
     time: '9:00 PM',
     url: 'https://westernerslc.com/events',
@@ -78,7 +78,7 @@ const shows: Show[] = [
   },
   {
     date: 'February 21, 2026',
-    venue: "The Westerner",
+    venue: 'The Westerner',
     location: '3360 S Redwood Rd, West Valley City, UT',
     time: '9:00 PM',
     url: 'https://westernerslc.com/events',
@@ -88,7 +88,7 @@ const shows: Show[] = [
   },
   {
     date: 'February 27, 2026',
-    venue: "SCOREZ",
+    venue: 'SCOREZ',
     location: '571 W State Street, Lehi, UT',
     time: '9:00 PM',
     url: 'https://www.scorez-sports-bar.com/',
@@ -98,7 +98,7 @@ const shows: Show[] = [
   },
   {
     date: 'April 11, 2026',
-    venue: "The Engine Room and Pub",
+    venue: 'The Engine Room and Pub',
     location: '1388 S 300 W #400 SLC, UT',
     time: '9:00 PM',
     url: 'https://www.engineroompub.com/',
@@ -108,7 +108,7 @@ const shows: Show[] = [
   },
   {
     date: 'May 2, 2026',
-    venue: "SCOREZ",
+    venue: 'SCOREZ',
     location: '571 W State Street, Lehi, UT',
     time: '9:00 PM',
     url: 'https://www.scorez-sports-bar.com/',
@@ -118,7 +118,7 @@ const shows: Show[] = [
   },
   {
     date: 'May 15, 2026',
-    venue: "The Westerner",
+    venue: 'The Westerner',
     location: '3360 S Redwood Rd, West Valley City, UT',
     time: '9:00 PM',
     url: 'https://westernerslc.com/events',
@@ -128,7 +128,7 @@ const shows: Show[] = [
   },
   {
     date: 'May 16, 2026',
-    venue: "The Westerner",
+    venue: 'The Westerner',
     location: '3360 S Redwood Rd, West Valley City, UT',
     time: '9:00 PM',
     url: 'https://westernerslc.com/events',
@@ -138,7 +138,7 @@ const shows: Show[] = [
   },
   {
     date: 'July 17, 2026',
-    venue: "The Engine Room and Pub",
+    venue: 'The Engine Room and Pub',
     location: '1388 S 300 W #400 SLC, UT',
     time: '9:00 PM',
     url: 'https://www.engineroompub.com/',
@@ -148,7 +148,7 @@ const shows: Show[] = [
   },
   {
     date: 'August 14, 2026',
-    venue: "SCOREZ",
+    venue: 'SCOREZ',
     location: '571 W State Street, Lehi, UT',
     time: '9:00 PM',
     url: 'https://www.scorez-sports-bar.com/',
@@ -158,7 +158,7 @@ const shows: Show[] = [
   },
   {
     date: 'August 15, 2026',
-    venue: "SCOREZ",
+    venue: 'SCOREZ',
     location: '571 W State Street, Lehi, UT',
     time: '9:00 PM',
     url: 'https://www.scorez-sports-bar.com/',
@@ -168,7 +168,7 @@ const shows: Show[] = [
   },
   {
     date: 'September 17, 2026',
-    venue: "Bonneville Salt Dome",
+    venue: 'Bonneville Salt Dome',
     location: 'Bonneville Salt Dome, 850 N Bonneville Blvd, Salt Lake City, UT 84103',
     time: '7:00 PM',
     url: 'https://www.slc.gov/events/2026/04/02/dancing-under-the-stars/',
@@ -178,7 +178,7 @@ const shows: Show[] = [
   },
   {
     date: 'October 17, 2026',
-    venue: "The Engine Room and Pub",
+    venue: 'The Engine Room and Pub',
     location: '1388 S 300 W #400 SLC, UT',
     time: '9:00 PM',
     url: 'https://www.engineroompub.com/',
@@ -188,7 +188,7 @@ const shows: Show[] = [
   },
   {
     date: 'November 20, 2026',
-    venue: "The Westerner",
+    venue: 'The Westerner',
     location: '3360 S Redwood Rd, West Valley City, UT',
     time: '9:00 PM',
     url: 'https://westernerslc.com/events',
@@ -198,10 +198,132 @@ const shows: Show[] = [
   },
   {
     date: 'November 21, 2026',
-    venue: "The Westerner",
+    venue: 'The Westerner',
     location: '3360 S Redwood Rd, West Valley City, UT',
     time: '9:00 PM',
     url: 'https://westernerslc.com/events',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+
+  // 2027 SHOWS
+  {
+    date: 'January 8, 2027',
+    venue: 'SCOREZ',
+    location: '571 W State Street, Lehi, UT',
+    time: '9:00 PM',
+    url: 'https://www.scorez-sports-bar.com/',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+  {
+    date: 'January 9, 2027',
+    venue: 'SCOREZ',
+    location: '571 W State Street, Lehi, UT',
+    time: '9:00 PM',
+    url: 'https://www.scorez-sports-bar.com/',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+  {
+    date: 'March 5, 2027',
+    venue: 'SCOREZ',
+    location: '571 W State Street, Lehi, UT',
+    time: '9:00 PM',
+    url: 'https://www.scorez-sports-bar.com/',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+  {
+    date: 'March 6, 2027',
+    venue: 'SCOREZ',
+    location: '571 W State Street, Lehi, UT',
+    time: '9:00 PM',
+    url: 'https://www.scorez-sports-bar.com/',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+  {
+    date: 'May 14, 2027',
+    venue: 'SCOREZ',
+    location: '571 W State Street, Lehi, UT',
+    time: '9:00 PM',
+    url: 'https://www.scorez-sports-bar.com/',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+  {
+    date: 'May 15, 2027',
+    venue: 'SCOREZ',
+    location: '571 W State Street, Lehi, UT',
+    time: '9:00 PM',
+    url: 'https://www.scorez-sports-bar.com/',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+  {
+    date: 'July 16, 2027',
+    venue: 'SCOREZ',
+    location: '571 W State Street, Lehi, UT',
+    time: '9:00 PM',
+    url: 'https://www.scorez-sports-bar.com/',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+  {
+    date: 'July 17, 2027',
+    venue: 'SCOREZ',
+    location: '571 W State Street, Lehi, UT',
+    time: '9:00 PM',
+    url: 'https://www.scorez-sports-bar.com/',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+  {
+    date: 'September 17, 2027',
+    venue: 'SCOREZ',
+    location: '571 W State Street, Lehi, UT',
+    time: '9:00 PM',
+    url: 'https://www.scorez-sports-bar.com/',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+  {
+    date: 'September 18, 2027',
+    venue: 'SCOREZ',
+    location: '571 W State Street, Lehi, UT',
+    time: '9:00 PM',
+    url: 'https://www.scorez-sports-bar.com/',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+  {
+    date: 'November 19, 2027',
+    venue: 'SCOREZ',
+    location: '571 W State Street, Lehi, UT',
+    time: '9:00 PM',
+    url: 'https://www.scorez-sports-bar.com/',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+  {
+    date: 'November 20, 2027',
+    venue: 'SCOREZ',
+    location: '571 W State Street, Lehi, UT',
+    time: '9:00 PM',
+    url: 'https://www.scorez-sports-bar.com/',
     pastShowUrl: '',
     pastShowVideo: '',
     pastShowPicture: `${Dave}`
@@ -210,23 +332,41 @@ const shows: Show[] = [
 
 export function Shows(): JSX.Element {
   const [show2025, setShow2025] = useState(false);
+  const [show2027, setShow2027] = useState(true);
 
   const isPastShow = (showDate: string): boolean => {
     const today = new Date();
     today.setHours(0, 0, 0, 0);
-    return new Date(showDate) < today;
+
+    const date = new Date(showDate);
+    date.setHours(0, 0, 0, 0);
+
+    return date < today;
   };
 
   const getLink = (show: Show): string =>
-    isPastShow(show.date) && show.pastShowUrl ? show.pastShowUrl : show.url;
+    isPastShow(show.date) && show.pastShowUrl
+      ? show.pastShowUrl
+      : show.url;
 
-  const shows2025 = shows.filter(s => new Date(s.date).getFullYear() === 2025);
-  const shows2026 = shows.filter(s => new Date(s.date).getFullYear() === 2026);
+  const shows2025 = shows.filter(
+    s => new Date(s.date).getFullYear() === 2025
+  );
 
-  const cardClass = "relative overflow-hidden bg-[#2a2422] p-6 rounded-lg hover:bg-[#332e2b] transition-colors group cursor-pointer";
+  const shows2026 = shows.filter(
+    s => new Date(s.date).getFullYear() === 2026
+  );
+
+  const shows2027 = shows.filter(
+    s => new Date(s.date).getFullYear() === 2027
+  );
+
+  const cardClass =
+    'relative overflow-hidden bg-[#2a2422] p-6 rounded-lg hover:bg-[#332e2b] transition-colors group cursor-pointer';
 
   const renderCard = (show: Show, index: number) => {
     const past = isPastShow(show.date);
+
     return (
       <div
         key={index}
@@ -254,31 +394,40 @@ export function Shows(): JSX.Element {
             )}
           </div>
         )}
+
         {past && (
           <div className="absolute -right-16 top-8 transform rotate-45 bg-red-500 text-white py-1 w-64 text-center font-bold z-10">
             Y'all Missed it!
           </div>
         )}
+
         <div className="flex items-start gap-4 relative z-10">
           <div className="flex-1">
-            <p className={`font-bold text-xl mb-2 ${past ? 'text-gray-300' : 'text-white'}`}>
+            <p
+              className={`font-bold text-xl mb-2 ${
+                past ? 'text-gray-300' : 'text-white'
+              }`}
+            >
               {show.date}
             </p>
-            <p className={`text-lg ${past ? 'text-gray-400' : 'text-[#c64444]'}`}>
+
+            <p
+              className={`text-lg ${
+                past ? 'text-gray-400' : 'text-[#c64444]'
+              }`}
+            >
               {show.venue}
             </p>
-            {!past && (
-              <>
-                <div className="flex items-center gap-2 text-gray-400 mt-2">
-                  <MapPin className="w-4 h-4" />
-                  <span>{show.location}</span>
-                </div>
-                <div className="flex items-center gap-2 text-gray-400">
-                  <Clock className="w-4 h-4" />
-                  <span>{show.time}</span>
-                </div>
-              </>
-            )}
+
+            <div className="flex items-center gap-2 text-gray-400 mt-2">
+              <MapPin className="w-4 h-4" />
+              <span>{show.location}</span>
+            </div>
+
+            <div className="flex items-center gap-2 text-gray-400">
+              <Clock className="w-4 h-4" />
+              <span>{show.time}</span>
+            </div>
           </div>
         </div>
       </div>
@@ -288,11 +437,13 @@ export function Shows(): JSX.Element {
   return (
     <section className="py-20 px-4 md:px-8 bg-black/30">
       <div className="max-w-6xl mx-auto">
+
         <h2 className="text-4xl font-bold mb-12 text-center flex items-center justify-center gap-2">
           Upcoming Shows
           <Calendar className="w-8 h-8" />
         </h2>
 
+        {/* 2025 */}
         <div className="mb-10">
           <button
             onClick={() => setShow2025(prev => !prev)}
@@ -301,21 +452,60 @@ export function Shows(): JSX.Element {
             <span className="text-xl font-bold text-gray-400 group-hover:text-gray-200 transition-colors">
               2025 Shows
             </span>
+
             {show2025 ? (
               <ChevronUp className="w-5 h-5 text-gray-400 group-hover:text-gray-200 transition-colors" />
             ) : (
               <ChevronDown className="w-5 h-5 text-gray-400 group-hover:text-gray-200 transition-colors" />
             )}
           </button>
+
           {show2025 && (
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {shows2025.map((show, index) => renderCard(show, index))}
+              {shows2025.map((show, index) =>
+                renderCard(show, index)
+              )}
             </div>
           )}
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {shows2026.map((show, index) => renderCard(show, index))}
+        {/* 2026 */}
+        <div className="mb-10">
+          <h3 className="text-2xl font-bold mb-6 text-white">
+            2026 Shows
+          </h3>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {shows2026.map((show, index) =>
+              renderCard(show, index)
+            )}
+          </div>
+        </div>
+
+        {/* 2027 */}
+        <div className="mb-10">
+          <button
+            onClick={() => setShow2027(prev => !prev)}
+            className="w-full flex items-center justify-between px-6 py-4 bg-[#2a2422] hover:bg-[#332e2b] rounded-lg transition-colors mb-4 group"
+          >
+            <span className="text-xl font-bold text-white group-hover:text-gray-200 transition-colors">
+              2027 Shows
+            </span>
+
+            {show2027 ? (
+              <ChevronUp className="w-5 h-5 text-gray-400 group-hover:text-gray-200 transition-colors" />
+            ) : (
+              <ChevronDown className="w-5 h-5 text-gray-400 group-hover:text-gray-200 transition-colors" />
+            )}
+          </button>
+
+          {show2027 && (
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {shows2027.map((show, index) =>
+                renderCard(show, index)
+              )}
+            </div>
+          )}
         </div>
 
       </div>
