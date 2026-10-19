@@ -177,6 +177,16 @@ const shows: Show[] = [
     pastShowPicture: `${Dave}`
   },
   {
+    date: 'November 19, 2026',
+    venue: 'The Westerner',
+    location: '3360 S Redwood Rd, West Valley City, UT',
+    time: '9:00 PM',
+    url: 'https://westernerslc.com/events',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+  {
     date: 'November 20, 2026',
     venue: 'The Westerner',
     location: '3360 S Redwood Rd, West Valley City, UT',
@@ -239,6 +249,36 @@ const shows: Show[] = [
     pastShowPicture: `${Dave}`
   },
   {
+    date: 'April 15, 2027',
+    venue: 'The Westerner',
+    location: '3360 S Redwood Rd, West Valley City, UT',
+    time: '9:00 PM',
+    url: 'https://westernerslc.com/events',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+  {
+    date: 'April 16, 2027',
+    venue: 'The Westerner',
+    location: '3360 S Redwood Rd, West Valley City, UT',
+    time: '9:00 PM',
+    url: 'https://westernerslc.com/events',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+  {
+    date: 'April 17, 2027',
+    venue: 'The Westerner',
+    location: '3360 S Redwood Rd, West Valley City, UT',
+    time: '9:00 PM',
+    url: 'https://westernerslc.com/events',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+  {
     date: 'May 14, 2027',
     venue: 'SCOREZ',
     location: '571 W State Street, Lehi, UT',
@@ -259,6 +299,36 @@ const shows: Show[] = [
     pastShowPicture: `${Dave}`
   },
   {
+    date: 'June 10, 2027',
+    venue: 'The Westerner',
+    location: '3360 S Redwood Rd, West Valley City, UT',
+    time: '9:00 PM',
+    url: 'https://westernerslc.com/events',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+  {
+    date: 'June 11, 2027',
+    venue: 'The Westerner',
+    location: '3360 S Redwood Rd, West Valley City, UT',
+    time: '9:00 PM',
+    url: 'https://westernerslc.com/events',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+  {
+    date: 'June 12, 2027',
+    venue: 'The Westerner',
+    location: '3360 S Redwood Rd, West Valley City, UT',
+    time: '9:00 PM',
+    url: 'https://westernerslc.com/events',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+  {
     date: 'July 16, 2027',
     venue: 'SCOREZ',
     location: '571 W State Street, Lehi, UT',
@@ -274,6 +344,36 @@ const shows: Show[] = [
     location: '571 W State Street, Lehi, UT',
     time: '9:00 PM',
     url: 'https://www.scorez-sports-bar.com/',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+  {
+    date: 'August 12, 2027',
+    venue: 'The Westerner',
+    location: '3360 S Redwood Rd, West Valley City, UT',
+    time: '9:00 PM',
+    url: 'https://westernerslc.com/events',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+  {
+    date: 'August 13, 2027',
+    venue: 'The Westerner',
+    location: '3360 S Redwood Rd, West Valley City, UT',
+    time: '9:00 PM',
+    url: 'https://westernerslc.com/events',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+  {
+    date: 'August 14, 2027',
+    venue: 'The Westerner',
+    location: '3360 S Redwood Rd, West Valley City, UT',
+    time: '9:00 PM',
+    url: 'https://westernerslc.com/events',
     pastShowUrl: '',
     pastShowVideo: '',
     pastShowPicture: `${Dave}`
@@ -314,6 +414,36 @@ const shows: Show[] = [
     location: '571 W State Street, Lehi, UT',
     time: '9:00 PM',
     url: 'https://www.scorez-sports-bar.com/',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+  {
+    date: 'December 2, 2027',
+    venue: 'The Westerner',
+    location: '3360 S Redwood Rd, West Valley City, UT',
+    time: '9:00 PM',
+    url: 'https://westernerslc.com/events',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+  {
+    date: 'December 3, 2027',
+    venue: 'The Westerner',
+    location: '3360 S Redwood Rd, West Valley City, UT',
+    time: '9:00 PM',
+    url: 'https://westernerslc.com/events',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+  {
+    date: 'December 4, 2027',
+    venue: 'The Westerner',
+    location: '3360 S Redwood Rd, West Valley City, UT',
+    time: '9:00 PM',
+    url: 'https://westernerslc.com/events',
     pastShowUrl: '',
     pastShowVideo: '',
     pastShowPicture: `${Dave}`
