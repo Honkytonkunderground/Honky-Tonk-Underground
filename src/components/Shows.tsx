@@ -399,6 +399,36 @@ const shows: Show[] = [
     pastShowPicture: `${Dave}`
   },
   {
+    date: 'October 7, 2027',
+    venue: 'The Westerner',
+    location: '3360 S Redwood Rd, West Valley City, UT',
+    time: '9:00 PM',
+    url: 'https://westernerslc.com/events',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+  {
+    date: 'October 8, 2027',
+    venue: 'The Westerner',
+    location: '3360 S Redwood Rd, West Valley City, UT',
+    time: '9:00 PM',
+    url: 'https://westernerslc.com/events',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+  {
+    date: 'October 9, 2027',
+    venue: 'The Westerner',
+    location: '3360 S Redwood Rd, West Valley City, UT',
+    time: '9:00 PM',
+    url: 'https://westernerslc.com/events',
+    pastShowUrl: '',
+    pastShowVideo: '',
+    pastShowPicture: `${Dave}`
+  },
+  {
     date: 'November 19, 2027',
     venue: 'SCOREZ',
     location: '571 W State Street, Lehi, UT',
