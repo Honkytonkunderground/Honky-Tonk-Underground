@@ -229,7 +229,7 @@ const shows: Show[] = [
     pastShowPicture: `${Dave}`
   },
   {
-    date: 'March 5, 2027',
+    date: 'March 19, 2027',
     venue: 'SCOREZ',
     location: '571 W State Street, Lehi, UT',
     time: '9:00 PM',
@@ -239,7 +239,7 @@ const shows: Show[] = [
     pastShowPicture: `${Dave}`
   },
   {
-    date: 'March 6, 2027',
+    date: 'March 20, 2027',
     venue: 'SCOREZ',
     location: '571 W State Street, Lehi, UT',
     time: '9:00 PM',
